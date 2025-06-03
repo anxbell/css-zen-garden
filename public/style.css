@@ -19,6 +19,8 @@ h3,
 h4,
 h5,
 h6 {
+  --radius: 20px;
+
   margin: 0;
 }
 
@@ -59,17 +61,17 @@ select {
   }
 }
 :root {
-  --color-primary: #3a00ff;
+  --color-primary: #c5c5c5;
   --color-primary-alt: #6f6ffd;
   --color-secondary: #d42257;
-  --color-background: #d2fbf7;
+  --color-background: #FFF;
   --color-text: #412d86;
   --color-light: #fff;
   --color-anchor: #3a00ff;
   --font-family: "Baloo 2", sans-serif;
   --font-weight-strong: 500;
   --font-size-h1: 6rem;
-  --font-size-h2: 3rem;
+  --font-size-h2: 0.8rem;
   --font-size-h3: 2rem;
   --font-size-h4: 1.35rem;
   --font-size-text: 1.15rem;
@@ -92,7 +94,7 @@ h1 {
 
 h2 {
   font-size: var(--font-size-h2);
-  font-size: clamp(2rem, 4vw, var(--font-size-h2));
+  font-size: clamp(1.5rem, 4vw, var(--font-size-h2));
   text-align: center;
 }
 
@@ -249,24 +251,38 @@ header {
   --logomark-padding: 0 1em;
   display: grid;
   min-height: 40vh;
-  place-items: center;
-  padding: 10vh 2rem;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%233a00ff' fill-opacity='0.4'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23d42257' fill-opacity='0.4'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  background-repeat: repeat-x;
-  background-position: 0 -38px, 17px -40px;
+  margin: 2rem 2rem;
   color: var(--color-primary);
   text-align: center;
+
+  background-color: green;
+  border-radius: var(--radius);
+}
+header .container {
+  position: relative;
+
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/bb/Machu_Picchu%2C_2023_%28012%29.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 header h1 {
   display: inline-grid;
   min-height: var(--logomark-height);
   padding: var(--logomark-padding);
-  border: 0.16em solid var(--color-primary);
-  box-shadow: 0.12em 0.12em var(--color-secondary);
   place-content: center;
 }
 header h2 {
+  margin-bottom: 0;
+  width: 140px;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  bottom: 12px;
   max-width: 30ch;
+  
+  font-family: "Helvetica";
+  background-color: white;
+  border-radius: 0 var(--radius);
 }
 
 nav ul {
@@ -321,7 +337,7 @@ nav ul li {
   width: 2em;
   transform: translate(-50%, -100%);
   background-color: var(--color-background);
-  color: var(--color-primary);
+FFFr: var(--color-primary);
   font-size: 3rem;
   content: "S";
 }
@@ -469,7 +485,7 @@ nav ul li {
   padding: 5vmin;
   outline: 4px dashed var(--color-secondary);
   background-color: var(--color-background);
-  text-align: center;
+FFF-align: center;
 }
 #files .container a:not(:last-child) {
   margin: 0.5rem;
@@ -621,7 +637,7 @@ nav ul li {
   width: 100%;
   min-height: 2.5em;
   background-color: var(--color-background);
-  color: var(--color-primary);
+FFFr: var(--color-primary);
 }
 
 .link-codepen {
