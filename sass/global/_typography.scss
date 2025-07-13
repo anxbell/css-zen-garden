@@ -45,12 +45,21 @@ h2 {
     background-color: #464545;
     animation: blink-caret .5s step-end infinite;
 }
-
 @keyframes typing-erase {
-    0% { width: 0 }
-    80% { width: 100% }
-    90%, 100% { width: 0 }
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  90% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
 }
+
 
 @keyframes blink-caret {
     from, to { background-color: transparent }
