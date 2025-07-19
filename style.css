@@ -431,23 +431,19 @@ nav ul li a:hover::after, nav ul li a:focus::after {
   }
 }
 .page-footer {
-  border: solid 3px #747136;
+  border: solid 3px #6145ff;
   --logomark-height: 2em;
   --logomark-padding: 0;
   position: relative;
   padding: 3rem 1rem;
   background-color: var(--color-primary);
-  /*background-image: url('https://media.gettyimages.com/id/930824730/photo/machu-picchu-peru.jpg?b=1&s=170667a&w=0&k=20&c=R6iCHOAT123DmO636AEw8REgIoiZgpGFdx8U8mSA6L0=');*/
-  background-image: url('https://www.peru-explorer.com/wp-content/uploads/machu-picchu-5.jpg');
-  background-position: bottom;
-  background-repeat: no-repeat;
-  /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23d2fbf7' fill-opacity='1'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); */
-  /* background-repeat: repeat-x; */
-  /* background-position: center -34px; */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23d2fbf7' fill-opacity='1'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+  background-position: center -34px;
   color: var(--color-light);
 }
 .page-footer::before {
-  /*display: inline-grid;*/
+  display: inline-grid;
   min-height: var(--logomark-height);
   padding: var(--logomark-padding);
   border: 0.16em solid var(--color-primary);
@@ -455,13 +451,12 @@ nav ul li a:hover::after, nav ul li a:focus::after {
   place-content: center;
   position: absolute;
   left: 50%;
-  /*width: 3em;*/
+  width: 2em;
   transform: translate(-50%, -100%);
   background-color: var(--color-background);
   color: var(--color-primary);
   font-size: 3rem;
-  content: "BYU-I";
-  padding-inline: 0.25em;
+  content: "S";
 }
 .page-footer p:first-child {
   margin-top: 3rem;
@@ -522,38 +517,14 @@ nav ul li a:hover::after, nav ul li a:focus::after {
     transform: scale(2) translate(-25%, -25%);
   }
 }
-.profile:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 30px rgba(116, 113, 54, 0.15), 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-color: var(--color-primary);
-}
+
 .profile {
-  /*border: solid 1px red;
-  
+  border: solid 1px red;
   width: 95vw;
   max-width: 80ch;
   margin: 1rem auto 10vh;
   padding: 1.25rem;
-  z-index: 1;*/
-    width: 90vw; /*(vw - vh)*/
-    max-width: 80ch;
-    margin-inline: auto;
-
-    display: relative;
-    padding: 3rem 4rem;
-    background: linear-gradient(135deg, rgba(116, 113, 54, 0.08) 0%, rgba(184, 195, 202, 0.05) 100%);
-    border: 2px solid var(--color-primary-alt);
-    border-radius: var(--border-radius);
-    position: relative;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 20px rgba(116, 113, 54, 0.1), 0 1px 3px rgba(0, 0, 0, 0.05);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-article .profile {
-  width: 100%;
-  max-width: 80ch;
-  margin-right: auto;
-  margin-left: auto;
+  z-index: 1;
 }
 .profile h4 {
   margin: 0;
@@ -570,11 +541,6 @@ article .profile {
   border: 2px solid currentColor;
   color: var(--color-secondary);
 }
-.profile .container > a:hover {
-  --gradient-deg: 135deg; 
-  background-image: linear-gradient(var(--gradient-deg), var(--color-primary) 0%, var(--color-secondary) 100%);
-}
-
 .profile ul {
   display: flex;
   flex-wrap: wrap;
@@ -1034,10 +1000,6 @@ article .profile {
   min-height: 2.5em;
   background-color: var(--color-background);
   color: var(--color-primary);
-}
-
-.page-footer ul li a {
-  height: 100%;
 }
 
 .link-codepen {
