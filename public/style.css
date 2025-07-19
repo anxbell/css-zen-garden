@@ -242,7 +242,6 @@ article,
   padding: 0;
   grid-gap: 1em;
   list-style: none;
-  
 }
 
 header {
@@ -389,7 +388,7 @@ nav ul li a:hover::after, nav ul li a:focus::after {
   padding-bottom: 100%;
   transform: translate(-50%, -50%);
   transition: 300ms transform ease-in;
-  /* background-image: radial-gradient(rgba(255, 0, 0, 0) 20%, #b3f8f1 20%, #b3f8f1 25%, rgba(255, 0, 0, 0) 25%, rgba(255, 0, 0, 0) 30%, #b3f8f1 30%, #b3f8f1 40%, rgba(255, 0, 0, 0) 40%, rgba(255, 0, 0, 0) 45%, #b3f8f1 45%, #b3f8f1 50%, rgba(255, 0, 0, 0) 50%); */
+  background-image: radial-gradient(rgba(255, 0, 0, 0) 20%, #b3f8f1 20%, #b3f8f1 25%, rgba(255, 0, 0, 0) 25%, rgba(255, 0, 0, 0) 30%, #b3f8f1 30%, #b3f8f1 40%, rgba(255, 0, 0, 0) 40%, rgba(255, 0, 0, 0) 45%, #b3f8f1 45%, #b3f8f1 50%, rgba(255, 0, 0, 0) 50%);
   opacity: 0.8;
   content: "";
   z-index: -1;
@@ -557,9 +556,21 @@ nav ul li a:hover::after, nav ul li a:focus::after {
 #about section:nth-child(2) ul li {
   margin: 0.25em;
   padding: 0.25em 0.5em;
-  background-color: var(--color-anchor);
-  color: var(--color-light);
-  border-radius: 0.5em;
+  background-color: var(--color-light);
+}
+
+#about section:nth-child(2) li {
+  margin: 0.25em;
+  padding: 0.5em 1em;
+  background: #fff;
+  border: 4px solid transparent;
+  border-image: linear-gradient(45deg, #1c7390, #1f219f, #0b0164) 1;
+  color: #153040;
+  font-weight: 600;
+  font-size: 1em;
+  text-align: center;
+  white-space: nowrap;
+  cursor: default;
 }
 
 #about section:nth-child(2)::before {
@@ -571,7 +582,7 @@ nav ul li a:hover::after, nav ul li a:focus::after {
   padding-bottom: 100%;
   transform: translate(-50%, -50%);
   transition: 300ms transform ease-in;
-  /* background-image: radial-gradient(rgba(255, 0, 0, 0) 20%, #b3f8f1 20%, #b3f8f1 25%, rgba(255, 0, 0, 0) 25%, rgba(255, 0, 0, 0) 30%, #b3f8f1 30%, #b3f8f1 40%, rgba(255, 0, 0, 0) 40%, rgba(255, 0, 0, 0) 45%, #b3f8f1 45%, #b3f8f1 50%, rgba(255, 0, 0, 0) 50%); */
+  background-image: radial-gradient(rgba(255, 0, 0, 0) 20%, #b3f8f1 20%, #b3f8f1 25%, rgba(255, 0, 0, 0) 25%, rgba(255, 0, 0, 0) 30%, #b3f8f1 30%, #b3f8f1 40%, rgba(255, 0, 0, 0) 40%, rgba(255, 0, 0, 0) 45%, #b3f8f1 45%, #b3f8f1 50%, rgba(255, 0, 0, 0) 50%);
   opacity: 0.8;
   content: "";
   z-index: -1;
@@ -628,7 +639,6 @@ nav ul li a:hover::after, nav ul li a:focus::after {
 
 .page-footer [class^=link] {
   width: 100%;
-  height: 100%;
   min-height: 2.5em;
   background-color: var(--color-background);
   color: var(--color-primary);
